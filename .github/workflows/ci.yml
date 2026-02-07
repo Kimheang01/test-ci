@@ -16,7 +16,7 @@ job:
           node-version: '20'
 
       - name: Install denpendency
-        uses: npm install
+        uses: npm ci
 
       - name: Check code formatting
         run: npm run format:check
