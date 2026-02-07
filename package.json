@@ -1,15 +1,15 @@
 {
-  "devDependencies": {
-    "prettier": "^3.8.1"
-  },
+  "name": "node-docker",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Hen Kimheang",
+  "type": "commonjs",
+  "main": "index.js",
   "scripts": {
-    "format:check": "check .",
-    "prebuild": "npm run format:check",
-    "build": "your-build-command"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,md}": "prettier --check"
-  }
-  
-}
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
 
+  }
+}
