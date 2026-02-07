@@ -1,4 +1,3 @@
-
 name: Next.js CI
 on:
   pull request:
@@ -10,20 +9,17 @@ job:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: Install denpendency
-        uses: npm install
+        uses: npm lint
 
       - name: Check code formatting
         run: npm run format:check
 
       - name: Run lint
         run: npm run lint
-
-      - name: Check code formatting
-        run: npm run format:check
