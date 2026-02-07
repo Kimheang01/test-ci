@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  },
+  "scripts": {
+    "format:check": "check .",
+    "prebuild": "npm run format:check",
+    "build": "your-build-command"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,md}": "prettier --check"
+  }
+  
+}
+
